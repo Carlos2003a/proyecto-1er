@@ -1,0 +1,26 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tareas</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="contenedor">
+    <!-- encabezado de la aplicación -->
+    <h1>Agregar Tareas</h1>
+    <!-- campo de entrada para agregar nuevas tareas -->
+    <input type="text" id="entradatarea" placeholder="Agregar nueva tarea">
+    <!-- botón para agregar una nueva tarea -->
+    <button onclick="agregarTarea()">Agregar</button>
+    <!--  muestra todas las tareas activas o completadas -->
+    <div>
+        <input type="radio" name="filtro" value="todas" onclick="renderizarTareas()" checked> Todas
+        <input type="radio" name="filtro" value="activas" onclick="renderizarTareas()"> Activas
+        <input type="radio" name="filtro" value="completadas" onclick="renderizarTareas()"> Completadas
+    </div>
+    <ul id="listaTareas"></ul>
+</div>
+<script src="funcion.js"></script>
+</body>
+</html>
